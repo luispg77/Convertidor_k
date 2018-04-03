@@ -79,12 +79,7 @@
     </Compile>
     <Compile Include="Controladores\ExcelController.cs" />
     <Compile Include="Entidades\Archivo.cs" />
-    <Compile Include="AgregarValidacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AgregarValidacion.Designer.cs">
-      <DependentUpon>AgregarValidacion.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Entidades\ArchivoValidacion.cs" />
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,9 +88,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AgregarValidacion.resx">
-      <DependentUpon>AgregarValidacion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ambiente.resx">
       <DependentUpon>Ambiente.cs</DependentUpon>
     </EmbeddedResource>
