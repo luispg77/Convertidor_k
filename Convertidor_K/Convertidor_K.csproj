@@ -66,6 +66,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -88,6 +89,7 @@
       <DependentUpon>Ambiente.cs</DependentUpon>
     </Compile>
     <Compile Include="Controladores\ExcelController.cs" />
+    <Compile Include="Controladores\FileController.cs" />
     <Compile Include="Controladores\JsonController.cs" />
     <Compile Include="Entidades\Archivo.cs" />
     <Compile Include="Entidades\ArchivoValidacion.cs" />

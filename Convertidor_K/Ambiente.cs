@@ -32,6 +32,26 @@ namespace Convertidor_K
         private void Ambiente_Load(object sender, EventArgs e)
         {
             richTextBox1.Enabled = true;
+            List<ArchivoValidacion> archivosPrueba = new List<ArchivoValidacion>();
+            ArchivoValidacion archivo1 = new ArchivoValidacion();
+            ArchivoValidacion archivo2 = new ArchivoValidacion();
+            ArchivoValidacion archivo3 = new ArchivoValidacion();
+            String cadenaJson = String.Empty;
+            FileController fc = new FileController();
+            JsonController jsonC = new JsonController();
+            archivo1.origen = ")\r\nHola";
+            archivo1.reemplazo = ")|Hola";
+            archivo2.origen = ")\r\nHolaMundo";
+            archivo2.reemplazo = ")|HolaMundo";
+            archivo3.origen = ")\r\nHolaMundoDos";
+            archivo3.reemplazo = ")|HolaMundoDos";
+            archivosPrueba.Add(archivo1);
+            archivosPrueba.Add(archivo2);
+            archivosPrueba.Add(archivo3);
+            cadenaJson = jsonC.RegresaCadenaJsonValidaciones(archivosPrueba);
+
+            fc.CargarCrearArchivoConfig(cadenaJson);
+
         }
 
         private void limpiarToolStripMenuItem_Click(object sender, EventArgs e)
