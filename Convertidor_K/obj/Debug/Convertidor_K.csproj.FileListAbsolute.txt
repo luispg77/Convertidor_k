@@ -1,0 +1,14 @@
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\bin\Debug\Convertidor_K.exe
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\bin\Debug\Convertidor_K.pdb
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.csprojResolveAssemblyReference.cache
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.Properties.Resources.resources
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.csproj.GenerateResource.Cache
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.exe
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.pdb
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.Ambiente.resources
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.Splash.resources
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\bin\Debug\Convertidor_K.exe.manifest
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\bin\Debug\Convertidor_K.application
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.exe.manifest
+c:\users\ibm_admin\documents\visual studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.application
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.csproj.ResolveComReference.cache
