@@ -15,3 +15,15 @@ C:\Users\IBM_ADMIN\Documents\Visual Studio 2015\Projects\Convertidor_K\Convertid
 C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.csproj.ResolveComReference.cache
 C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.exe
 C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.pdb
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\bin\Debug\Convertidor_K.exe.manifest
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\bin\Debug\Convertidor_K.application
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\bin\Debug\Convertidor_K.exe
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\bin\Debug\Convertidor_K.pdb
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.csprojResolveAssemblyReference.cache
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.AgregarValidacion.resources
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.Ambiente.resources
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.Splash.resources
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.Properties.Resources.resources
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.csproj.GenerateResource.Cache
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.exe.manifest
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.application
