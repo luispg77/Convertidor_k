@@ -40,5 +40,11 @@ namespace Convertidor_K
         {
             this.Close();
         }
+
+        private void rtbOriginal_TextChanged(object sender, EventArgs e)
+        {
+            ValidadorController validadorText = new ValidadorController();
+            rtbOriginal.Text = validadorText.ValidaEntradaTexto(rtbOriginal.Text);
+        }
     }
 }
