@@ -27,3 +27,5 @@ Convertidor_K/bin/Debug/Convertidor_K.exe
 *.resources
 *.cache
 *.pdb
+*.cache
+*.cache
