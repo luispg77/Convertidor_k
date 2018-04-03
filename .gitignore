@@ -27,15 +27,3 @@ Convertidor_K/bin/Debug/Convertidor_K.exe
 *.resources
 *.cache
 *.pdb
-Convertidor_K/bin/Debug/app.publish/Convertidor_K.exe
-*.exe
-.vs/Convertidor_K/v14/.suo
-*.pdb
-*.manifest
-*.exe
-*.cache
-*.Cache
-*.application
-*.csproj
-*.manifest
-*.pdb
