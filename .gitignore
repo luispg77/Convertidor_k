@@ -1,0 +1,13 @@
+
+*.cache
+*.cache
+*.Cache
+*.exe
+*.application
+*.exe
+*.manifest
+*.pdb
+*.application
+*.manifest
+*.application
+.vs/Convertidor_K/v14/.suo

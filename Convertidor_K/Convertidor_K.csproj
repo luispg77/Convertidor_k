@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarValidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarValidacion.Designer.cs">
+      <DependentUpon>AgregarValidacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ambiente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AgregarValidacion.resx">
+      <DependentUpon>AgregarValidacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ambiente.resx">
       <DependentUpon>Ambiente.cs</DependentUpon>
     </EmbeddedResource>
