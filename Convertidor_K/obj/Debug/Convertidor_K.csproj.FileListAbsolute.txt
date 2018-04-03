@@ -27,3 +27,6 @@ C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Conver
 C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.csproj.GenerateResource.Cache
 C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.exe.manifest
 C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.application
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2015\Projects\Convertidor_K\Convertidor_K\bin\Debug\Newtonsoft.Json.dll
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2015\Projects\Convertidor_K\Convertidor_K\bin\Debug\Newtonsoft.Json.xml
+C:\Users\IBM_ADMIN\Documents\Visual Studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.AgregarValidacion.resources
