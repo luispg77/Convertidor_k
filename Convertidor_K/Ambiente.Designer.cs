@@ -136,21 +136,23 @@
             // agregarValidacionesToolStripMenuItem
             // 
             this.agregarValidacionesToolStripMenuItem.Name = "agregarValidacionesToolStripMenuItem";
-            this.agregarValidacionesToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.agregarValidacionesToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
             this.agregarValidacionesToolStripMenuItem.Text = "Agregar Validaciones";
             this.agregarValidacionesToolStripMenuItem.Click += new System.EventHandler(this.agregarValidacionesToolStripMenuItem_Click);
             // 
             // verValidacionesToolStripMenuItem
             // 
             this.verValidacionesToolStripMenuItem.Name = "verValidacionesToolStripMenuItem";
-            this.verValidacionesToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.verValidacionesToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
             this.verValidacionesToolStripMenuItem.Text = "Ver Validaciones";
+            this.verValidacionesToolStripMenuItem.Click += new System.EventHandler(this.verValidacionesToolStripMenuItem_Click);
             // 
             // modificarValidcacionesToolStripMenuItem
             // 
             this.modificarValidcacionesToolStripMenuItem.Name = "modificarValidcacionesToolStripMenuItem";
-            this.modificarValidcacionesToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
-            this.modificarValidcacionesToolStripMenuItem.Text = "Modificar Validcaciones";
+            this.modificarValidcacionesToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
+            this.modificarValidcacionesToolStripMenuItem.Text = "Modificar Validaciones";
+            this.modificarValidcacionesToolStripMenuItem.Click += new System.EventHandler(this.modificarValidcacionesToolStripMenuItem_Click);
             // 
             // richTextBox1
             // 

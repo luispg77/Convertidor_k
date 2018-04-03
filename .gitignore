@@ -15,3 +15,15 @@
 .vs/Convertidor_K/v14/.suo
 Convertidor_K/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 Convertidor_K/bin/Debug/app.publish/Convertidor_K.exe
+*.exe
+Convertidor_K/bin/Debug/Convertidor_K.application
+Convertidor_K/bin/Debug/Convertidor_K.exe
+*.manifest
+*.application
+*.application
+*.txt
+*.Cache
+*.cache
+*.resources
+*.cache
+*.pdb

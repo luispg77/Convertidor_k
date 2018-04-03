@@ -30,3 +30,7 @@ C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Conver
 C:\Users\IBM_ADMIN\Documents\Visual Studio 2015\Projects\Convertidor_K\Convertidor_K\bin\Debug\Newtonsoft.Json.dll
 C:\Users\IBM_ADMIN\Documents\Visual Studio 2015\Projects\Convertidor_K\Convertidor_K\bin\Debug\Newtonsoft.Json.xml
 C:\Users\IBM_ADMIN\Documents\Visual Studio 2015\Projects\Convertidor_K\Convertidor_K\obj\Debug\Convertidor_K.AgregarValidacion.resources
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\bin\Debug\Newtonsoft.Json.dll
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\bin\Debug\Newtonsoft.Json.xml
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.ModificarValidacion.resources
+C:\Users\IBM_ADMIN\Documents\GitHub\Convertidor_k\Convertidor_K\obj\Debug\Convertidor_K.VisualizarValidaciones.resources

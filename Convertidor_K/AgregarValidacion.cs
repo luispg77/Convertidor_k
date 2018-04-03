@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Convertidor_K.Controladores;
 
 namespace Convertidor_K
 {
@@ -16,9 +17,28 @@ namespace Convertidor_K
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            ValidadorController validadorInp = new ValidadorController();
+
+            if (!validadorInp.ValidaInputNullo(rtbReemplazo))
+            {
+                MessageBox.Show("El texto de Reemplazo esta vacio", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                //Guardar en archivo
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
