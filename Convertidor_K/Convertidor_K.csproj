@@ -88,6 +88,7 @@
       <DependentUpon>Ambiente.cs</DependentUpon>
     </Compile>
     <Compile Include="Controladores\ExcelController.cs" />
+    <Compile Include="Controladores\JsonController.cs" />
     <Compile Include="Entidades\Archivo.cs" />
     <Compile Include="Entidades\ArchivoValidacion.cs" />
     <Compile Include="Splash.cs">
