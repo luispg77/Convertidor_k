@@ -88,7 +88,11 @@
       <DependentUpon>Ambiente.cs</DependentUpon>
     </Compile>
     <Compile Include="Controladores\ExcelController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controladores\ValidadorController.cs" />
+=======
+    <Compile Include="Controladores\JsonController.cs" />
+>>>>>>> parent of b69c8d0... Prototipo creación de directorios y de archivos
     <Compile Include="Entidades\Archivo.cs" />
     <Compile Include="Entidades\ArchivoValidacion.cs" />
     <Compile Include="VisualizarValidaciones.cs">

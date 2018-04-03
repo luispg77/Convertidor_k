@@ -72,14 +72,22 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Convertidor_K.exe" size="26112">
+=======
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Convertidor_K.exe" size="20992">
+>>>>>>> parent of b69c8d0... Prototipo creación de directorios y de archivos
       <assemblyIdentity name="Convertidor_K" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+<<<<<<< HEAD
         <dsig:DigestValue>P+vVLGoRowlHUTpb3rLmBbVPnqs=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>rrMGQCBfhS74YTVjUnhL4HQu0QY=</dsig:DigestValue>
+>>>>>>> parent of b69c8d0... Prototipo creación de directorios y de archivos
       </hash>
     </dependentAssembly>
   </dependency>

@@ -11,7 +11,11 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+<<<<<<< HEAD
         <dsig:DigestValue>+xmiPgxhlCNKhHF2pF8/YHkJ4Xc=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>YmyM2jQXNmTXheAjxzbBX4MPv14=</dsig:DigestValue>
+>>>>>>> parent of b69c8d0... Prototipo creación de directorios y de archivos
       </hash>
     </dependentAssembly>
   </dependency>
