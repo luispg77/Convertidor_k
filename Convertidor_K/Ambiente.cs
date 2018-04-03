@@ -100,5 +100,16 @@ namespace Convertidor_K
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void configuraciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void agregarValidacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarValidacion agregarValidacion = new AgregarValidacion();
+            agregarValidacion.Show();
+        }
     }
 }
