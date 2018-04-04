@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows;
 using Convertidor_K.Controladores;
 
 namespace Convertidor_K
@@ -44,7 +45,11 @@ namespace Convertidor_K
         private void rtbOriginal_TextChanged(object sender, EventArgs e)
         {
             ValidadorController validadorText = new ValidadorController();
-            rtbOriginal.Text = validadorText.ValidaEntradaTexto(rtbOriginal.Text);
+            rtbOriginal.Text = validadorText.ValidaEntradaTexto(rtbOriginal);
+
+            TextPointer caretPos = rtbOriginal.CaretPosition;
+            caretPos = caretPos.DocumentEnd;
+            rtbOriginal.CaretPosition = caretPos;
         }
     }
 }

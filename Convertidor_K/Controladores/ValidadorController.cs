@@ -10,11 +10,14 @@ namespace Convertidor_K.Controladores
     class ValidadorController
     {
 
-        public String ValidaEntradaTexto(String inputTexto)
+        public String ValidaEntradaTexto(RichTextBox tcbInputTexto)
         {
-            String textoFormato = null;
+            String textoDarFormato = tcbInputTexto.Text;
 
-            return textoFormato;
+            textoDarFormato = textoDarFormato.Replace("\n", "\\n\\r");
+            textoDarFormato = textoDarFormato.Replace(Environment.NewLine, "\\n\\r");
+
+            return textoDarFormato;
         }
 
         public bool ValidaInputNullo(RichTextBox tcbInputTexto)
