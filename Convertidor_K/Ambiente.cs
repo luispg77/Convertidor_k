@@ -73,7 +73,7 @@ namespace Convertidor_K
 
         private void informaciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Programa desarrollado por:" + Environment.NewLine + "josepg@mx1.ibm.com" + Environment.NewLine + "marco.hernandez.medina@ibm.com" + Environment.NewLine + "Marzo 2018.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Programa desarrollado por:" + Environment.NewLine + "josepg@mx1.ibm.com" + Environment.NewLine + "marco.hernandez.medina@ibm.com" + Environment.NewLine + "Abril 2018.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void crearExcelToolStripMenuItem_Click(object sender, EventArgs e)
