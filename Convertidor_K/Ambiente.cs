@@ -38,6 +38,7 @@ namespace Convertidor_K
         {
             label1.Text = String.Empty;
             richTextBox1.Text = String.Empty;
+            richTextBox2.Text = String.Empty;
         }
 
         private void cargarArchivoToolStripMenuItem_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ambiente));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -104,14 +105,14 @@
             // limpiarToolStripMenuItem
             // 
             this.limpiarToolStripMenuItem.Name = "limpiarToolStripMenuItem";
-            this.limpiarToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
+            this.limpiarToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.limpiarToolStripMenuItem.Text = "Limpiar";
             this.limpiarToolStripMenuItem.Click += new System.EventHandler(this.limpiarToolStripMenuItem_Click);
             // 
             // crearExcelToolStripMenuItem
             // 
             this.crearExcelToolStripMenuItem.Name = "crearExcelToolStripMenuItem";
-            this.crearExcelToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
+            this.crearExcelToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.crearExcelToolStripMenuItem.Text = "Crear Excel";
             this.crearExcelToolStripMenuItem.Click += new System.EventHandler(this.crearExcelToolStripMenuItem_Click);
             // 
@@ -126,7 +127,7 @@
             // informaciónToolStripMenuItem
             // 
             this.informaciónToolStripMenuItem.Name = "informaciónToolStripMenuItem";
-            this.informaciónToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.informaciónToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.informaciónToolStripMenuItem.Text = "Información";
             this.informaciónToolStripMenuItem.Click += new System.EventHandler(this.informaciónToolStripMenuItem_Click);
             // 
@@ -234,6 +235,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Ambiente";
