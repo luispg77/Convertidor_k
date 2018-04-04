@@ -40,7 +40,6 @@
             this.configuraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarValidacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verValidacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modificarValidcacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,8 +59,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
             this.acercaDeToolStripMenuItem,
-            this.acercaDeToolStripMenuItem1,
-            this.configuraciónToolStripMenuItem});
+            this.configuraciónToolStripMenuItem,
+            this.acercaDeToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
@@ -105,14 +104,14 @@
             // limpiarToolStripMenuItem
             // 
             this.limpiarToolStripMenuItem.Name = "limpiarToolStripMenuItem";
-            this.limpiarToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.limpiarToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
             this.limpiarToolStripMenuItem.Text = "Limpiar";
             this.limpiarToolStripMenuItem.Click += new System.EventHandler(this.limpiarToolStripMenuItem_Click);
             // 
             // crearExcelToolStripMenuItem
             // 
             this.crearExcelToolStripMenuItem.Name = "crearExcelToolStripMenuItem";
-            this.crearExcelToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.crearExcelToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
             this.crearExcelToolStripMenuItem.Text = "Crear Excel";
             this.crearExcelToolStripMenuItem.Click += new System.EventHandler(this.crearExcelToolStripMenuItem_Click);
             // 
@@ -135,8 +134,7 @@
             // 
             this.configuraciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarValidacionesToolStripMenuItem,
-            this.verValidacionesToolStripMenuItem,
-            this.modificarValidcacionesToolStripMenuItem});
+            this.verValidacionesToolStripMenuItem});
             this.configuraciónToolStripMenuItem.Name = "configuraciónToolStripMenuItem";
             this.configuraciónToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.configuraciónToolStripMenuItem.Text = "Configuración";
@@ -155,13 +153,6 @@
             this.verValidacionesToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
             this.verValidacionesToolStripMenuItem.Text = "Ver Validaciones";
             this.verValidacionesToolStripMenuItem.Click += new System.EventHandler(this.verValidacionesToolStripMenuItem_Click);
-            // 
-            // modificarValidcacionesToolStripMenuItem
-            // 
-            this.modificarValidcacionesToolStripMenuItem.Name = "modificarValidcacionesToolStripMenuItem";
-            this.modificarValidcacionesToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
-            this.modificarValidcacionesToolStripMenuItem.Text = "Modificar Validaciones";
-            this.modificarValidcacionesToolStripMenuItem.Click += new System.EventHandler(this.modificarValidcacionesToolStripMenuItem_Click);
             // 
             // richTextBox1
             // 
@@ -269,7 +260,6 @@
         private System.Windows.Forms.ToolStripMenuItem configuraciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarValidacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verValidacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem modificarValidcacionesToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RichTextBox richTextBox2;
