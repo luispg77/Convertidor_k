@@ -68,7 +68,6 @@
             this.lblTituloOriginal.Size = new System.Drawing.Size(61, 17);
             this.lblTituloOriginal.TabIndex = 3;
             this.lblTituloOriginal.Text = "Original:";
-            this.lblTituloOriginal.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblTituloReemplazo
             // 
@@ -115,7 +114,6 @@
             this.rtbReemplazo.Size = new System.Drawing.Size(305, 111);
             this.rtbReemplazo.TabIndex = 10;
             this.rtbReemplazo.Text = "";
-            this.rtbReemplazo.TextChanged += new System.EventHandler(this.rtbReemplazo_TextChanged);
             // 
             // AgregarValidacion
             // 

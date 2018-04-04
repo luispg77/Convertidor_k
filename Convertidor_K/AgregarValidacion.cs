@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using Convertidor_K.Controladores;
+using Convertidor_K.Entidades;
+using System.Collections.Generic;
 
 namespace Convertidor_K
 {
@@ -11,14 +13,18 @@ namespace Convertidor_K
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             ValidadorController validadorInp = new ValidadorController();
+
+            List<ArchivoValidacion> listaValidaciones = new List<ArchivoValidacion>();
+            ArchivoValidacion nuevaValidacion = null;
+            String cadenaJson = String.Empty;
+            String rutaValidaciones = @"C:\convertidor_config\config.txt";
+            String auxOriginal;
+
+            FileController fc = new FileController();
+            JsonController jc = new JsonController();
 
             if (!validadorInp.ValidaInputNullo(rtbReemplazo))
             {
@@ -26,8 +32,21 @@ namespace Convertidor_K
             }
             else
             {
-                //Guardar en archivo--
-
+                auxOriginal = rtbOriginal.Text.Replace("\\r\\n", "\r\n");
+                nuevaValidacion = new ArchivoValidacion(auxOriginal, rtbReemplazo.Text);
+                cadenaJson = fc.LeerArchivoConfiguracion(rutaValidaciones);
+                listaValidaciones = jc.RegresaListaValidaciones(cadenaJson);
+                listaValidaciones.Add(nuevaValidacion);
+                cadenaJson = jc.RegresaCadenaJsonValidaciones(listaValidaciones);
+                try
+                {
+                    fc.CargarCrearArchivoConfig(cadenaJson);
+                    MessageBox.Show("La validación se Agrego Correctamente", "Validacion Agregada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al agregar Validación: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -40,15 +59,9 @@ namespace Convertidor_K
         {
             ValidadorController validadorText = new ValidadorController();
             rtbOriginal.Text = validadorText.ValidaEntradaTexto(rtbOriginal);
+
             rtbOriginal.Select(this.rtbOriginal.Text.Length, 0);
         }
 
-        private void rtbReemplazo_TextChanged(object sender, EventArgs e)
-        {
-            ValidadorController validadorText = new ValidadorController();
-            rtbReemplazo.Text = validadorText.ValidaEntradaTexto(rtbReemplazo);
-
-            rtbReemplazo.Select(this.rtbReemplazo.Text.Length, 0);
-        }
     }
 }
