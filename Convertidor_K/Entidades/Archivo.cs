@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Convertidor_K.Controladores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,14 @@ namespace Convertidor_K.Entidades
         }
         public String nombreArchivo { get; set; }
         public String texto { get; set; }
+
+        public String CorregirElementos(String texto)
+        {
+            String cadenaNueva = texto;
+            Utilerias util = new Utilerias();
+            cadenaNueva = util.RealizarReemplazos(cadenaNueva);
+            return cadenaNueva;
+        }
 
         public String QuitaSaltosVacios(String texto)
         {

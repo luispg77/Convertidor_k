@@ -40,7 +40,6 @@ namespace Convertidor_K
         {
             ValidadorController validadorText = new ValidadorController();
             rtbOriginal.Text = validadorText.ValidaEntradaTexto(rtbOriginal);
-
             rtbOriginal.Select(this.rtbOriginal.Text.Length, 0);
         }
 
