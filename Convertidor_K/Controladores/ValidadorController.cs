@@ -14,8 +14,8 @@ namespace Convertidor_K.Controladores
         {
             String textoDarFormato = tcbInputTexto.Text;
 
-            textoDarFormato = textoDarFormato.Replace("\n", "\\n\\r");
-            textoDarFormato = textoDarFormato.Replace(Environment.NewLine, "\\n\\r");
+            textoDarFormato = textoDarFormato.Replace("\n", "\\r\\n");
+            textoDarFormato = textoDarFormato.Replace(Environment.NewLine, "\\r\\n");
 
             return textoDarFormato;
         }

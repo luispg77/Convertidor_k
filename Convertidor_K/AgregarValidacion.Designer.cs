@@ -115,6 +115,7 @@
             this.rtbReemplazo.Size = new System.Drawing.Size(305, 111);
             this.rtbReemplazo.TabIndex = 10;
             this.rtbReemplazo.Text = "";
+            this.rtbReemplazo.TextChanged += new System.EventHandler(this.rtbReemplazo_TextChanged);
             // 
             // AgregarValidacion
             // 

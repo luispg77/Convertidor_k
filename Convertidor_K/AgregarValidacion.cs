@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Windows;
 using Convertidor_K.Controladores;
 
 namespace Convertidor_K
@@ -33,7 +26,8 @@ namespace Convertidor_K
             }
             else
             {
-                //Guardar en archivo
+                //Guardar en archivo--
+
             }
         }
 
@@ -47,9 +41,15 @@ namespace Convertidor_K
             ValidadorController validadorText = new ValidadorController();
             rtbOriginal.Text = validadorText.ValidaEntradaTexto(rtbOriginal);
 
-            TextPointer caretPos = rtbOriginal.CaretPosition;
-            caretPos = caretPos.DocumentEnd;
-            rtbOriginal.CaretPosition = caretPos;
+            rtbOriginal.Select(this.rtbOriginal.Text.Length, 0);
+        }
+
+        private void rtbReemplazo_TextChanged(object sender, EventArgs e)
+        {
+            ValidadorController validadorText = new ValidadorController();
+            rtbReemplazo.Text = validadorText.ValidaEntradaTexto(rtbReemplazo);
+
+            rtbReemplazo.Select(this.rtbReemplazo.Text.Length, 0);
         }
     }
 }
