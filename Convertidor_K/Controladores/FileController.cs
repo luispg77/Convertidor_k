@@ -22,5 +22,12 @@ namespace Convertidor_K.Controladores
                 sw.WriteLine(cadenaJson);
             }
         }
+
+        public String LeerArchivoConfiguracion(String ruta)
+        {
+            String texto = String.Empty;
+            texto = File.ReadAllText(ruta);
+            return texto;
+        }
     }
 }

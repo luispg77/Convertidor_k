@@ -31,7 +31,7 @@ namespace Convertidor_K
 
         private void Ambiente_Load(object sender, EventArgs e)
         {
-            richTextBox1.Enabled = true;
+            richTextBox1.Enabled = false;
         }
 
         private void limpiarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,13 +47,16 @@ namespace Convertidor_K
                 String nombreArchivo = String.Empty;
                 String texto = String.Empty;
                 String textoNuevo = String.Empty;
+                String txtPrueba = String.Empty;
                 openFileDialog1.ShowDialog();
                 nombreArchivo = openFileDialog1.FileName;
                 label1.Text = openFileDialog1.SafeFileName;
                 texto = File.ReadAllText(nombreArchivo);
                 Archivo archivo = new Archivo();
-                textoNuevo = archivo.QuitaSaltosVacios(texto);
-                richTextBox1.Text = textoNuevo;
+                //textoNuevo = archivo.QuitaSaltosVacios(texto);
+                txtPrueba = archivo.CorregirElementos(texto);
+                richTextBox1.Text = txtPrueba;
+                richTextBox2.Text = txtPrueba.Replace("@","\r\n");
 
             }
             catch(FileNotFoundException fe)

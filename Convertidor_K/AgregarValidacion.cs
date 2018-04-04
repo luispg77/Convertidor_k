@@ -44,12 +44,12 @@ namespace Convertidor_K
 
         private void rtbOriginal_TextChanged(object sender, EventArgs e)
         {
-            ValidadorController validadorText = new ValidadorController();
-            rtbOriginal.Text = validadorText.ValidaEntradaTexto(rtbOriginal);
+            //ValidadorController validadorText = new ValidadorController();
+            //rtbOriginal.Text = validadorText.ValidaEntradaTexto(rtbOriginal);
 
-            TextPointer caretPos = rtbOriginal.CaretPosition;
-            caretPos = caretPos.DocumentEnd;
-            rtbOriginal.CaretPosition = caretPos;
+            ////TextPointer caretPos = rtbOriginal.CaretPosition;
+            //caretPos = caretPos.DocumentEnd;
+            //rtbOriginal.CaretPosition = caretPos;
         }
     }
 }
