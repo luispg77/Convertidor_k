@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Convertidor_K.Entidades;
+using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 
@@ -26,5 +28,14 @@ namespace Convertidor_K.Controladores
             return true;
         }
 
+        public bool ValidaEntidadArchivo(ArchivoValidacion nuevaValidacion, List<ArchivoValidacion> listaValidaciones)
+        {
+            
+            foreach(ArchivoValidacion ar in listaValidaciones)
+            {
+                Console.WriteLine("coment");
+            }
+            return true;
+        }
     }
 }
