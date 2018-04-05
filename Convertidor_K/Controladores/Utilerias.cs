@@ -9,6 +9,12 @@ namespace Convertidor_K.Controladores
 {
     class Utilerias
     {
+        #region Reemplazos
+        /// <summary>
+        /// Realiza una serie de reemplazos en el texto que se le pase
+        /// </summary>
+        /// <param name="texto">Texto a corregir</param>
+        /// <returns>String</returns>
         public String RealizarReemplazos(String texto)
         {
             String cadenaFormateada = texto;
@@ -25,6 +31,7 @@ namespace Convertidor_K.Controladores
             }
             return cadenaFormateada;
         }
+        #endregion
         #region Generación de Hash
         /// <summary>
         /// Genera una cadena MD5 con el texto que se le pasa

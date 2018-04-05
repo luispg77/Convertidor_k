@@ -20,7 +20,11 @@ namespace Convertidor_K.Entidades
         }
         public String nombreArchivo { get; set; }
         public String texto { get; set; }
-
+        /// <summary>
+        /// Corregir Elementos realiza un barrido general del texto que se le pasa y limpia todos los errores tomando como base el archivo de configuración
+        /// </summary>
+        /// <param name="texto">Texto a corregir</param>
+        /// <returns>String</returns>
         public String CorregirElementos(String texto)
         {
             String cadenaNueva = texto;
@@ -73,7 +77,11 @@ namespace Convertidor_K.Entidades
             textoNuevo = textoNuevo.Replace("\r\n","@");
             return textoNuevo;
         }
-
+        /// <summary>
+        /// Separador Inicial da inicio a formato del texto para ser procesado en el engine de Excel
+        /// </summary>
+        /// <param name="texto">Texto a formatear</param>
+        /// <returns>string[]</returns>
         public string[] SeparadorInicial(String texto)
         {
             string[] textoInicial = null;
