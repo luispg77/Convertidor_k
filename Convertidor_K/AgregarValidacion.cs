@@ -30,22 +30,29 @@ namespace Convertidor_K
             {
                 MessageBox.Show("El texto de Reemplazo esta vacio", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            else 
             {
                 auxOriginal = rtbOriginal.Text.Replace("\\r\\n", "\r\n");
                 nuevaValidacion = new ArchivoValidacion(auxOriginal, rtbReemplazo.Text);
                 cadenaJson = fc.LeerArchivoConfiguracion(rutaValidaciones);
                 listaValidaciones = jc.RegresaListaValidaciones(cadenaJson);
-                listaValidaciones.Add(nuevaValidacion);
-                cadenaJson = jc.RegresaCadenaJsonValidaciones(listaValidaciones);
-                try
+                if (validadorInp.ValidaEntidadArchivo(nuevaValidacion, listaValidaciones))
                 {
-                    fc.CargarCrearArchivoConfig(cadenaJson);
-                    MessageBox.Show("La validación se Agrego Correctamente", "Validacion Agregada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    listaValidaciones.Add(nuevaValidacion);
+                    cadenaJson = jc.RegresaCadenaJsonValidaciones(listaValidaciones);
+                    try
+                    {
+                        fc.CargarCrearArchivoConfig(cadenaJson);
+                        MessageBox.Show("La validación se Agrego Correctamente", "Validacion Agregada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al agregar Validación: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Error al agregar Validación: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("La validación ya  fue Ingresada.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
