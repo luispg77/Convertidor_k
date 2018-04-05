@@ -30,10 +30,15 @@ namespace Convertidor_K.Controladores
 
         public bool ValidaEntidadArchivo(ArchivoValidacion nuevaValidacion, List<ArchivoValidacion> listaValidaciones)
         {
-            
+            Utilerias utileria = new Utilerias();
+            String md5Compara = String.Empty;
             foreach(ArchivoValidacion ar in listaValidaciones)
             {
-                Console.WriteLine("coment");
+                md5Compara = utileria.GenerarCadenaMD5(ar.origen+ar.reemplazo);
+                if (md5Compara.Equals(utileria.GenerarCadenaMD5(nuevaValidacion.origen+nuevaValidacion.reemplazo)))
+                {
+                    return false;
+                }
             }
             return true;
         }
