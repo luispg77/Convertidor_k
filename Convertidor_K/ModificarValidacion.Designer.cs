@@ -67,9 +67,11 @@
             this.rtbReemplazo.Size = new System.Drawing.Size(305, 111);
             this.rtbReemplazo.TabIndex = 16;
             this.rtbReemplazo.Text = "";
+            this.rtbReemplazo.TextChanged += new System.EventHandler(this.rtbReemplazo_TextChanged);
             // 
             // rtbOriginal
             // 
+            this.rtbOriginal.Enabled = false;
             this.rtbOriginal.Location = new System.Drawing.Point(128, 94);
             this.rtbOriginal.Name = "rtbOriginal";
             this.rtbOriginal.Size = new System.Drawing.Size(305, 111);
@@ -84,6 +86,7 @@
             this.btnCancelar.TabIndex = 14;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAceptar
             // 
@@ -93,6 +96,7 @@
             this.btnAceptar.TabIndex = 13;
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // lblTituloReemplazo
             // 

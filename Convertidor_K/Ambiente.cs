@@ -116,12 +116,6 @@ namespace Convertidor_K
             agregarValidacion.Show();
         }
 
-        private void modificarValidcacionesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ModificarValidacion modificarValidacion = new ModificarValidacion();
-            modificarValidacion.Show();
-        }
-
         private void verValidacionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             VisualizarValidaciones visualizarValidaciones = new VisualizarValidaciones();

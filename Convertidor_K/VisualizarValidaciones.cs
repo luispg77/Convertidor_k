@@ -13,10 +13,14 @@ namespace Convertidor_K
 {
     public partial class VisualizarValidaciones : Form
     {
+        private String origenSeleccionado = String.Empty;
+        private String reemplazoSeleccionado = String.Empty;
+
         public VisualizarValidaciones()
         {
             InitializeComponent();
             this.GeneraTabla();
+            this.dgvVisualizaciones.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVisualizaciones_CellClick);
         }
 
         public void GeneraTabla()
@@ -70,8 +74,36 @@ namespace Convertidor_K
 
         private void btnModificarValidacion_Click(object sender, EventArgs e)
         {
-            ModificarValidacion modificarValidacion = new ModificarValidacion();
-            modificarValidacion.Show();
+            ModificarValidacion modificarValidacion;
+
+            if (!origenSeleccionado.Equals(""))
+            {
+                modificarValidacion = new ModificarValidacion(origenSeleccionado, reemplazoSeleccionado);
+                modificarValidacion.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un Valor de la Lista ", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void dgvVisualizaciones_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row;
+
+            try
+            {
+                 row = dgvVisualizaciones.SelectedRows[0];
+                 origenSeleccionado = row.Cells[0].Value.ToString();
+                 reemplazoSeleccionado = row.Cells[1].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al seleccionar Valor: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
         }
     }
 }
